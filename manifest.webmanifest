@@ -1,0 +1,29 @@
+{
+  "name": "#TACFITNSCE — Entrenamiento físico y de combate",
+  "short_name": "TACFIT",
+  "description": "Registro de entrenamientos, récords, reloj de intervalos y Pruebas de Suficiencia Física.",
+  "lang": "es-CL",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#11140f",
+  "theme_color": "#11140f",
+  "icons": [
+    {
+      "src": "iconos/icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "iconos/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "iconos/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
