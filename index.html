@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>#NSCE</title>
+<meta name="description" content="Seguimiento de entrenamiento físico y Pruebas de Suficiencia Física">
+<meta name="theme-color" content="#0e1014">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="NSCE">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="iconos/icono.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="iconos/icono-180.png">
+<link rel="stylesheet" href="estilos.css?v=153">
+</head>
+<body>
+<header class="barra-sup">
+  <div class="marca" id="marca"></div>
+  <div class="sub" id="subtitulo"></div>
+  <button class="btn-perfil btn-ayuda" id="bAyuda" aria-label="Ayuda de esta pantalla">?</button>
+  <button class="btn-perfil" id="bReloj" data-v="reloj" aria-label="Reloj de entrenamiento"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M10 2h4"/></svg></button>
+  <button class="btn-perfil" id="bPerfil" data-v="perfil" aria-label="Perfil y ajustes"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></button>
+</header>
+
+<main id="vista"></main>
+
+<nav class="pestanas" id="pestanas">
+  <button data-v="hoy"><svg class="ico" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>Inicio</button>
+  <button data-v="diario"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>Diario</button>
+  <button class="mas" data-v="nuevo" aria-label="Registrar entrenamiento"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+  <button data-v="psf"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>Pruebas</button>
+  <button data-v="progreso"><svg class="ico" viewBox="0 0 24 24"><path d="M4 19h16"/><path d="M5 15l4-5 4 3 6-7"/></svg>Analizar</button>
+</nav>
+
+<div id="aviso" class="aviso" hidden></div>
+<dialog id="dialogo"></dialog>
+
+<script src="iconos.js?v=153"></script>
+<script src="psf.js?v=153"></script>
+<script src="movimientos.js?v=153"></script>
+<script src="registro.js?v=153"></script>
+<script src="escalar.js?v=153"></script>
+<script src="tramos.js?v=153"></script>
+<script src="esfuerzo.js?v=153"></script>
+<script src="gps.js?v=153"></script>
+<script src="protocolos.js?v=153"></script>
+<script src="programa.js?v=153"></script>
+<script src="diario.js?v=153"></script>
+<script src="perfil.js?v=153"></script>
+<script src="inbody.js?v=153"></script>
+<script src="estado.js?v=153"></script>
+<script src="recompensas.js?v=153"></script>
+<script src="desafio.js?v=153"></script>
+<script src="energia.js?v=153"></script>
+<script src="analizar.js?v=153"></script>
+<script src="descanso.js?v=153"></script>
+<script src="plan.js?v=153"></script>
+<script src="psfplan.js?v=153"></script>
+<script src="mujer.js?v=153"></script>
+<script src="agenda.js?v=153"></script>
+<script src="social.js?v=153"></script>
+<script src="proteger.js?v=153"></script>
+<script src="bienvenida.js?v=153"></script>
+<script src="pruebas.js?v=153"></script>
+<script src="repetir.js?v=153"></script>
+<script src="compartir.js?v=153"></script>
+<script src="discos.js?v=153"></script>
+<script src="afiches.js?v=153"></script>
+<script src="importar.js?v=153"></script>
+<script src="unidad.js?v=153"></script>
+<script src="box.js?v=153"></script>
+<script src="nube-config.js?v=153"></script>
+<script src="nube.js?v=153"></script>
+<script src="avisos.js?v=153"></script>
+<script src="reloj_datos.js?v=153"></script>
+<script src="plus.js?v=153"></script>
+<script src="logro_hoy.js?v=153"></script>
+<script src="app.js?v=153"></script>
+</body>
+</html>
