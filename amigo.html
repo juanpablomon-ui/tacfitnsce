@@ -1,0 +1,15 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><title>Te invitaron a NSCE</title>
+<meta property="og:title" content="Te invitaron a entrenar en NSCE"><meta property="og:description" content="Entrena, registra y compite con tus amigos."><meta property="og:image" content="https://juanpablomon-ui.github.io/tacfitnsce/iconos/icono-512.png">
+<style>*{box-sizing:border-box}body{margin:0;background:#0e1014;color:#fff;font:17px/1.45 -apple-system,system-ui,sans-serif;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:20px}main{max-width:420px;width:100%;text-align:center}img{width:110px;border-radius:26px}h1{margin:14px 0 4px;font-size:26px}p{color:#a5abb4;margin:6px 0 16px}a.b{display:block;background:#252930;color:#fff;text-decoration:none;font-weight:800;border-radius:16px;padding:16px;margin:10px 0}a.p{background:#d7ff3a;color:#111}small{color:#8b9099;display:block;margin-top:14px}</style></head><body><main>
+<img src="iconos/icono-512.png" alt="NSCE"><h1>Te invitaron a entrenar</h1><p id="t">Acepta y sean amigos en NSCE.</p>
+<a class="b p" id="abrir" href="#">Ya tengo NSCE: abrir</a><a class="b" id="baja" href="https://apps.apple.com/app/id6832364676">Descargar NSCE gratis</a><a class="b" id="web" href="./">Usarla en el navegador</a>
+<small id="n">👉 Si la descargas: ábrela, entra a Diario → Amigos → Agregar y toca «Pegar invitación».</small></main>
+<script>
+(function(){ var m = /A-[A-Z0-9]{6}/i.exec(location.hash), c = m ? m[0].toUpperCase() : '', $ = function(i){ return document.getElementById(i); };
+  if(!c){ $('t').textContent = 'Este enlace no trae una invitación. Pídele a tu amigo que la mande de nuevo.'; $('abrir').remove(); return; }
+  $('abrir').href = 'nsce://amigo/' + c; $('web').href = './#amigo=' + c;
+  $('baja').onclick = function(){ try{ navigator.clipboard.writeText('Invitación NSCE ' + c); }catch(e){} };
+  $('n').textContent += ' Tu código: ' + c + '.';
+  if(!/iPhone|iPad|iPod/.test(navigator.userAgent)){ $('abrir').remove(); $('web').className = 'b p'; }
+})();
+</script></body></html>
